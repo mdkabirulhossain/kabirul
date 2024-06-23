@@ -2,55 +2,31 @@ import './Contact.css'
 import { MdEmail } from "react-icons/md";
 import { IoIosCall } from "react-icons/io";
 import { FaLocationDot } from "react-icons/fa6";
-// const Contact = () => {
+ const Contact = () => {
 
-    //Here I use web3forms. search on google then find how to use web3form
-    // const onSubmit = async (event) => {
-    //     event.preventDefault();
-    //     const formData = new FormData(event.target);
-    
-    //     formData.append("access_key", "5d9bf280-c5f6-4681-bec8-b13a7b38304c");
-    
-    //     const object = Object.fromEntries(formData);
-    //     const json = JSON.stringify(object);
-    
-    //     const res = await fetch("http://localhost:3001/api/submit", {
-    //       method: "POST",
-    //       headers: {
-    //         "Content-Type": "application/json",
-    //         Accept: "application/json"
-    //       },
-    //       body: json
-    //     }).then((res) => res.json());
-    
-    //     if (res.success) {
-    //       console.log("Success", res);
-    //     }
-    //   };
+  // const onSubmit = async (event) => {
+  //   event.preventDefault();
+  //   const formData = new FormData(event.target);
+  //   event.target.reset();
+  //   formData.append("access_key", "5d9bf280-c5f6-4681-bec8-b13a7b38304c");
 
-    ///EMAIL JS 
-  import React, { useRef } from 'react';
-   import emailjs from '@emailjs/browser';
+  //   const object = Object.fromEntries(formData);
+  //   const json = JSON.stringify(object);
 
-  export const Contact = () => {
-  const form = useRef();
+  //   const res = await fetch("https://api.web3forms.com/submit", {
+  //     method: "POST",
+  //     headers: {
+  //       "Content-Type": "application/json",
+  //       Accept: "application/json"
+  //     },
+  //     body: json
+  //   }).then((res) => res.json());
 
-  const sendEmail = (e) => {
-    e.preventDefault();
-
-    emailjs
-      .sendForm('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', form.current, {
-        publicKey: 'YOUR_PUBLIC_KEY',
-      })
-      .then(
-        () => {
-          console.log('SUCCESS!');
-        },
-        (error) => {
-          console.log('FAILED...', error.text);
-        },
-      );
-  };
+  //   if (res.success) {
+  //     console.log("Success", res);
+  //   }
+  // };
+  
 
     return (
         
@@ -77,16 +53,17 @@ import { FaLocationDot } from "react-icons/fa6";
                         </div>
                     </div>
                 </div>
-                
-                <form ref={form} onSubmit={sendEmail} className='contact-right'>
+                {/* Use Rormspree for contact */}
+                <form action="https://formspree.io/f/xeojjgwb"
+                      method="POST" className='contact-right'>
                      <label htmlFor="">Your Name</label>
-                     <input type="text" placeholder='Enter your name' name="user_name" id="" />
+                     <input type="text" placeholder='Enter your name' name="name" id="" required />
                      <label htmlFor="">Your Email</label>
-                     <input type="email" placeholder='Enter your email' name="user_email" id="" />
+                     <input type="email" placeholder='Enter your email' name="email" id="" required />
                      <label htmlFor="">Write your message here</label>
-                     <textarea name="message" id="" rows="8" placeholder='Enter your message'></textarea>
+                     <textarea name="message" id="" rows="8" placeholder='Enter your message' required></textarea>
                      <button type="submit" className='contact-submit'>Submit now</button>
-                    
+                     
                 </form>
 
                 

@@ -1,5 +1,5 @@
 import './About.css'
-import profile from '../../assets/Logo.jpeg'
+// import profile from '../../assets/Logo.jpeg'
 
 const About = () => {
     return (
@@ -8,10 +8,10 @@ const About = () => {
                 <h1>About me</h1>
                 {/* <img src="" alt="image" /> */}
             </div>
-            <div className='about-sections'>
-                <div className="about-left">
+            {/* <div className='about-sections'> */}
+                {/* <div className="about-left">
                     <img src={profile} alt="profile" />
-                </div>
+                </div> */}
                 <div className="about-right">
                     <div className="about-para">
                         <p>I am an experienced full stack developer. I am working about last 2 years</p>
@@ -28,22 +28,34 @@ const About = () => {
                          </div>
                          <div className="about-skill">
                             <p>JavaScript</p>
-                            <hr style={{width:"68%"}} />
+                            <hr style={{width:"78%"}} />
                          </div>
                          <div className="about-skill">
-                            <p>node.js &
-                                <span><br></br></span> express.js</p>
-                            <hr style={{width:"88%"}} />
+                            <p>Node.js</p>
+                            <hr style={{width:"85%"}} />
                          </div>
+                         <div className="about-skill">
+                            <p>Express.js</p>
+                            <hr style={{width:"77%"}} />
+                         </div>
+                         <div className="about-skill">
+                            <p>MongoDB</p>
+                            <hr style={{width:"72%"}} />
+                         </div>
+                         <div className="about-skill">
+                            <p>MySQL</p>
+                            <hr style={{width:"75%"}} />
+                         </div>
+                         
                          
                     </div>
                 </div>
                 
-            </div>
+            {/* </div> */}
             <div className="about-achievements">
                      <div className="about-achievement">
-                        <h1>10+</h1>
-                        <p>YEARS OF EXPERIENCE</p>
+                        <h1>4+</h1>
+                        <p>MONTH OF EXPERIENCE</p>
                      </div>
                      <hr/>
                      <div className="about-achievement">
@@ -52,8 +64,8 @@ const About = () => {
                      </div>
                      <hr/>
                      <div className="about-achievement">
-                        <h1>10+</h1>
-                        <p>HAPPY CLIENT</p>
+                        <h1>2</h1>
+                        <p>RUNNING PROJECT</p>
                      </div>
                 </div>
         </div>
