@@ -14,8 +14,8 @@ const About = () => {
                 </div> */}
                 <div className="about-right">
                     <div className="about-para">
-                        <p>I am an experienced full stack developer. I am working about last 2 years</p>
-                        <p>I also want to learn knowledge about machine learning. And also always try to learn something new</p>
+                        <p>I am a passionate and dedicated MERN stack developer with a strong background in building dynamic and responsive web applications. I specialize in the MERN stack, which includes MongoDB, Express.js, React, and Node.js</p>
+                        <p>I am also very much interested about working Machine Learning and also Deep Learning.</p>
                     </div>
                     <div className="about-skills">
                          <div className="about-skill">

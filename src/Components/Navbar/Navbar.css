@@ -39,6 +39,10 @@
     text-decoration: none;
     color: white;
 }
+.anchor-link-main:hover{
+    color: #B923E1;
+   
+}
 .nav-mob-close{
     display: none;
 }
