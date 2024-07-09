@@ -2,7 +2,7 @@ import './Hero.css'
 import logo from '../../assets/Logo.jpeg'
 import AnchorLink from 'react-anchor-link-smooth-scroll';
 import { FaGithub, FaLinkedin, FaFacebook } from "react-icons/fa";
-const PDF_FILE_URL = 'http://localhost:5173/Md_Kabirul_CV.pdf'
+const PDF_FILE_URL = 'http://localhost:5173/Md_Kabirul_CV';
 const Hero = () => {
     const downloadFileAtURL = (url) => {
         const fileName = url.split('/').pop();
