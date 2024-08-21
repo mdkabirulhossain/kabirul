@@ -1,5 +1,5 @@
 import './MyWork.css'
-import myWork_data from '../../assets/myWork_data'
+import myWork_data from '../../assets/myWork_data.jsx'
 import { FaArrowRight } from "react-icons/fa";
 import { useEffect, useState } from 'react';
 
