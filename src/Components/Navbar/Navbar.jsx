@@ -7,13 +7,14 @@ import menu_close from '../../assets/menu_close.svg'
 const Navbar = () => {
     const[menu, setMenu] = useState("home");
     const menuRef = useRef();
-    console.log(menu);
+    
     const openMenu = ()=>{
         menuRef.current.style.right = "0";
     }
     const closeMenu = ()=>{
         menuRef.current.style.right = "-350px";
     }
+    console.log(menu);
     return (
         <div className='navbar'>
             <h1 className='font-bold text-2xl'>KABIRUL</h1>
