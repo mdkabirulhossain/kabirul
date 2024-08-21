@@ -50,18 +50,21 @@
     display: flex;
     justify-content: space-between;
     font-size: 18px;
+    margin-bottom: 40px;
 
 }
 .footer-bottom-left{
     display: flex;
     gap: 10px;
-    /* align-items: center;
-    justify-content: center; */
+    justify-items: center;
+    align-items: center;
 }
 .footer-bottom-right{
     display: flex;
     gap: 50px;
-    margin-bottom: 50px;
+    justify-items: center;
+    align-items: center;
+    
 
 }
 

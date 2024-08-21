@@ -19,7 +19,7 @@ const Hero = () => {
         <div id='home' className='hero'>
             <div className='icon'>
                 <img className='hero-logo' src={logo} alt="" />
-                <div >
+                <div className='flex gap-5'>
                     <a href="https://www.linkedin.com/in/md-kabirul-hossain-0a63351ab/">
                         <FaLinkedin size={35}></FaLinkedin>
                     </a>
@@ -33,7 +33,7 @@ const Hero = () => {
                 </div>
             </div>
             <div className='left'>
-                <h1><span>I am Md. Kabirul Hossain,</span> MERN Stack Developer.</h1>
+                <h1 className='p-1'><span>I am Md. Kabirul Hossain,</span> MERN Stack Developer.</h1>
                 {/* <p>I am a Full Stack Developer from Dhaka, Bangladesh. I am recently working five more projects.</p> */}
                 <div className="hero-action">
                     <div className="hero-connect"><AnchorLink className='anchor-link' offset={50} href='#contact'>Connect With Me</AnchorLink></div>

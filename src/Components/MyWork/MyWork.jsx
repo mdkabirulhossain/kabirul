@@ -1,8 +1,13 @@
 import './MyWork.css'
-import mywork_data from '../../assets/mywork_data.js'
+import mywork_data from '../../assets/myWork_data.js'
 import { FaArrowRight } from "react-icons/fa";
+import { useEffect, useState } from 'react';
 
 const MyWork = () => {
+    const[data, setData] = useState([]);
+    useEffect(()=>{
+        setData(mywork_data);
+    }, [])
     return (
         <div id='mywork' className="mywork">
             <div className="mywork-title">
@@ -10,13 +15,12 @@ const MyWork = () => {
             </div>
             <div className="mywork-container">
                   {
-                    mywork_data.map((work, index)=>{
-                        return <div key={index} >{work.w_name} <img key={index} src={work.w_img} alt="" /></div>
-                        // return <img key={index} src={work.w_img} alt="" />
-                        
-                        
-                    })
-                  }  
+                    data.map(project => <div className='container border-2 border-gray-200 rounded-md' key={project.w_no}>
+                            <p className='text-center p-3 m-2 cursor-pointer font-bold text-xl'>{project.w_name}</p>
+                            <img src={project.w_img} alt="" className='rounded-md'
+                            />
+                        </div>)
+                  }
             </div>
             <div className="mywork-showmore">
                 <p>Show More</p>
