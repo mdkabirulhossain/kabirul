@@ -3,15 +3,17 @@ import logo from '../../assets/Logo.jpeg'
 import AnchorLink from 'react-anchor-link-smooth-scroll';
 import { FaGithub, FaLinkedin, FaFacebook } from "react-icons/fa";
 const PDF_FILE_URL = 'http://localhost:5173/Md_Kabirul_CV.pdf' || 'http://localhost:5174/Md_Kabirul_CV.pdf';
+
 const Hero = () => {
     const downloadFileAtURL = (url) => {
-        const fileName = url.split('/').pop();
+        const fileName = url.split('/').pop() || 'PDF_FILE_URL';
         const aTag = document.createElement('a');
         aTag.href = url;
         aTag.setAttribute('download', fileName);
+        aTag.style.display = 'none';
         document.body.appendChild(aTag);
         aTag.click();
-        aTag.remove();
+        document.body.removeChild(aTag);
     }
     return (
         <div id='home' className='hero'>
