@@ -36,7 +36,7 @@ import { FaLocationDot } from "react-icons/fa6";
             </div>
             <div className="contact-section">
                 <div className='contact-left'>
-                    <h1>Let's Talk</h1>
+                    <h1>Lets Talk</h1>
                     <p>I am currently available to take on new project. And I am very Happy to contribute in unique projects.</p>
                     <div className="contact-details">
                         <div className="contact-detail">
