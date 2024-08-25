@@ -6,14 +6,19 @@ const PDF_FILE_URL = 'http://localhost:5173/Md_Kabirul_CV.pdf' || 'http://localh
 
 const Hero = () => {
     const downloadFileAtURL = (url) => {
-        const fileName = url.split('/').pop() || 'PDF_FILE_URL';
-        const aTag = document.createElement('a');
-        aTag.href = url;
-        aTag.setAttribute('download', fileName);
-        aTag.style.display = 'none';
-        document.body.appendChild(aTag);
-        aTag.click();
-        document.body.removeChild(aTag);
+        try {
+            const fileName = url.split('/').pop() || 'Md_Kabirul_CV.pdf';
+            const aTag = document.createElement('a');
+            aTag.href = url;
+            aTag.setAttribute('download', fileName);
+            aTag.style.display = 'none';
+            document.body.appendChild(aTag);
+            aTag.click();
+            document.body.removeChild(aTag);
+        } catch (error) {
+            console.error("Failed to download the file:", error);
+            alert("An error occurred while trying to download the file.");
+        }
     }
     return (
         <div id='home' className='hero'>
