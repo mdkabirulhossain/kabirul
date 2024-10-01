@@ -4,7 +4,12 @@
     justify-content: space-between;
     margin: 20px 70px;
 }
-
+.name{
+    background: linear-gradient(267deg, #DA7C25 0.36%, #B923E1 102.06%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
 .nav-manue{
      display: flex;
      align-items: center;
@@ -67,9 +72,9 @@
     .nav-mob-close{
         display: block;
         position: relative;
-        top: 30px;
-        left: 290px;
-        width: 30px;
+        top: 20px;
+        left: 30px;
+        width: 20px;
     }
     .nav-manue{
         position: fixed;
@@ -78,7 +83,7 @@
         top: 0;
         gap: 30px;
         background-color: #1F0016;
-        width: 350px;
+        width: 100%;
         height: 100%;
         z-index: 2;
         transition: right 0.5s;
@@ -86,9 +91,10 @@
 
     }
     .nav-manue li{
-        font-size: 30px;
-        padding-left: 100px;
+        font-size: 20px;
+        padding-left: 130px;
         flex-direction: row;
+        text-align: center;
         gap: 20px;
     }
 

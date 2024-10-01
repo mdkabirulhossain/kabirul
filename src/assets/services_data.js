@@ -2,7 +2,7 @@ const Services_Data = [
     {
         s_no:"01",
         s_name:"Front-end development",
-        s_desc:"HTML, CSS, and JavaScript: These three front-end development languages are the ..."
+        s_desc:"HTML, CSS, and JavaScript: These three front-end development languages ..."
     },
     {
         s_no:"02",

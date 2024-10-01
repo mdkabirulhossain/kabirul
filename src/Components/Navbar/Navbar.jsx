@@ -17,7 +17,7 @@ const Navbar = () => {
     console.log(menu);
     return (
         <div className='navbar'>
-            <h1 className='font-bold text-2xl'>KABIRUL</h1>
+            <h1 className='font-bold text-3xl name'>KABIRUL</h1>
             <img src={menu_open} alt="" onClick={openMenu} className='nav-mob-open' />
             <ul ref={menuRef} className="nav-manue">
                 <img src={menu_close} alt="" onClick={closeMenu} className='nav-mob-close' />

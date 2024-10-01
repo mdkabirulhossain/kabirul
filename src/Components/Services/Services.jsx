@@ -1,8 +1,10 @@
 import './Services.css';
 import services_data from '../../assets/services_data'
 import { GrLinkNext } from "react-icons/gr";
+import App from './modal';
 
 const Services = () => {
+
     return (
         <div id='services' className='services'>
             <div className="services-title">
@@ -14,12 +16,12 @@ const Services = () => {
                        return <div key={index}
                         className='services-format'
                         >
-                            <h3>{service.s_no}</h3>
                             <h2>{service.s_name}</h2>
                             <p>{service.s_desc}</p>
-                            <div className='services-readmore'>
-                                <p>read more</p>
-                                <GrLinkNext></GrLinkNext>
+                            <div className='services-readmore '>
+  
+                                
+                                <App id={service.s_no} name={service.s_name}></App>
                                 </div>
                         </div>
                     })
