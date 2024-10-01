@@ -24,7 +24,9 @@ const Hero = () => {
     return (
         <div id='home' className='hero'>
             <div className='icon'>
-                <img className='hero-logo' src={logo} alt="" />
+                <div className='border-2 w-56 h-56 rounded-full'>
+                <img className='hero-logo  w-full h-full rounded-full' src={logo} alt="" />
+                </div>
                 <div className='flex gap-5'>
                     <a href="https://www.linkedin.com/in/md-kabirul-hossain-0a63351ab/">
                         <FaLinkedin size={35}></FaLinkedin>

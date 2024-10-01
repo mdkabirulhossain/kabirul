@@ -1,7 +1,7 @@
 .hero{
     display: flex;
-    align-items: center;
-    justify-content: center;
+    align-items: end;
+    justify-content: space-around;
     flex-direction: row-reverse;
     gap: 2px;
 }
@@ -21,11 +21,6 @@
 }
 
 
-.hero img{
-    margin-top: 100px;
-    width: 60%;
-    border-radius: 50%;
-}
 
 .hero h1{
     text-align: center;
@@ -85,12 +80,13 @@
 @media(max-width:768px){
     .hero{
         flex-direction: column;
-        justify-content: none;
+        justify-content: center;
+        align-items: center;
     }
-    .hero img{
+    /* .hero img{
         margin-top: 100px;
         width: 260px;
-    }
+    } */
     .hero h1{
         text-align: center;
         margin-top: 2px;
