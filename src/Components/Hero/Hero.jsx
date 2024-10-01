@@ -2,24 +2,25 @@ import './Hero.css'
 import logo from '../../assets/Logo.jpeg'
 import AnchorLink from 'react-anchor-link-smooth-scroll';
 import { FaGithub, FaLinkedin, FaFacebook } from "react-icons/fa";
-const PDF_FILE_URL = 'http://localhost:5173/Md_Kabirul_CV.pdf' || 'http://localhost:5174/Md_Kabirul_CV.pdf';
+//const PDF_FILE_URL = 'http://localhost:5173/Md_Kabirul_CV.pdf' || 'http://localhost:5174/Md_Kabirul_CV.pdf';
 
 const Hero = () => {
-    const downloadFileAtURL = (url) => {
-        try {
-            const fileName = url.split('/').pop() || 'Md_Kabirul_CV.pdf';
-            const aTag = document.createElement('a');
-            aTag.href = url;
-            aTag.setAttribute('download', fileName);
-            aTag.style.display = 'none';
-            document.body.appendChild(aTag);
-            aTag.click();
-            document.body.removeChild(aTag);
-        } catch (error) {
-            console.error("Failed to download the file:", error);
-            alert("An error occurred while trying to download the file.");
-        }
-    }
+    const downloadFile = async () => {
+        const response = await fetch('/public/Md_Kabirul_CV.pdf');
+        const blob = await response.blob();
+        const url = window.URL.createObjectURL(blob);
+    
+        // Create a link and programmatically click to start download
+        const link = document.createElement('a');
+        link.href = url;
+        link.setAttribute('download', 'Md_Kabirul_CV.pdf');
+        document.body.appendChild(link);
+        link.click();
+    
+        // Clean up
+        link.remove();
+        window.URL.revokeObjectURL(url);
+      };
     return (
         <div id='home' className='hero'>
             <div className='icon'>
@@ -42,7 +43,7 @@ const Hero = () => {
                 {/* <p>I am a Full Stack Developer from Dhaka, Bangladesh. I am recently working five more projects.</p> */}
                 <div className="hero-action">
                     <div className="hero-connect"><AnchorLink className='anchor-link' offset={50} href='#contact'>Connect With Me</AnchorLink></div>
-                    <div className="hero-resume" onClick={() => { downloadFileAtURL(PDF_FILE_URL) }}>My-resume</div>
+                    <div className="hero-resume" onClick={downloadFile}>My-resume</div>
                 </div>
             </div>
 
