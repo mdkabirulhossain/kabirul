@@ -17,16 +17,16 @@ const MyWork = () => {
             </div>
             <div className="mywork-container">
                 {
-                    data.map(project => <div className='container border-2 border-gray-200 rounded-md' key={project.w_no}>
+                    data.map(project => <div className='container border-2 border-white shadow-lg rounded-md' key={project.w_no}>
                         <img src={project.w_img} alt="" className='rounded-md'
                             />
-                            <p className='text-center p-2 font-bold text-xl'>{project.w_name}</p>
+                            <p className='text-center py-2 font-bold text-xl'>{project.w_name}</p>
                         <a href={project.url}>
-                        <button className='live-link w-full p-2 mb-2 rounded-md'>Live link</button>
+                        <button className='live-link w-full py-2 mb-2 rounded-md'>Live link</button>
                         </a>
-                        
-                        <button className='live-link w-full p-2 mb-2 rounded-md'>Github link</button> 
-
+                        <a href={project.github_url}>
+                        <button className='live-link w-full py-2 mb-2 rounded-md'>Github link</button> 
+                        </a>
                     </div>)
                 }
             </div>
