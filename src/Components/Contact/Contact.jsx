@@ -4,30 +4,6 @@ import { IoIosCall } from "react-icons/io";
 import { FaLocationDot } from "react-icons/fa6";
  const Contact = () => {
 
-  // const onSubmit = async (event) => {
-  //   event.preventDefault();
-  //   const formData = new FormData(event.target);
-  //   event.target.reset();
-  //   formData.append("access_key", "5d9bf280-c5f6-4681-bec8-b13a7b38304c");
-
-  //   const object = Object.fromEntries(formData);
-  //   const json = JSON.stringify(object);
-
-  //   const res = await fetch("https://api.web3forms.com/submit", {
-  //     method: "POST",
-  //     headers: {
-  //       "Content-Type": "application/json",
-  //       Accept: "application/json"
-  //     },
-  //     body: json
-  //   }).then((res) => res.json());
-
-  //   if (res.success) {
-  //     console.log("Success", res);
-  //   }
-  // };
-  
-
     return (
         
         <div id='contact' className='contact'>

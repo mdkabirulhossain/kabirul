@@ -119,5 +119,41 @@
     }
 
 }
+@media(min-width:769px) and (max-width:991px){
+    .hero{
+        align-items: center;
+        flex-direction: column;
+        gap: 2px;
+    }
+    .hero h1{
+        text-align: center;
+        margin-top: 2px;
+        width: 90%;
+        font-size: 30px;
+    }
+    .hero p{
+        width: 60%;
+        font-size: 16px;
+        line-height: 32px;
+        margin: 10px 0px;
 
+    }
+    .hero-action{
+        gap: 16px;
+        font-size: 16px;
+        font-weight: 400;
+        margin-bottom: 50px;
+        align-items: center;
+        justify-content: center;
+    }
+    .hero-connect{
+        padding: 20px 20px;
+        border-radius: 40px;
+    }
+    .hero-resume{
+        padding: 20px 30px;
+        border-radius: 40px;
+        /* font-size: smaller; */
+    }
+}
 
