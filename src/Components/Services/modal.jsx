@@ -10,7 +10,6 @@ import'./modal.css'
 function MydModalWithGrid({ id,name, ...props }) {
     // Determine the modal content based on the id
     const getModalContent = () => {
-        console.log(id);
       switch (id) {
         case "01":
           return `HTML, CSS, and JavaScript. The Foundation of the Web as we know it today
