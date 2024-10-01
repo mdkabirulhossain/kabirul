@@ -27,7 +27,7 @@
     width: 419px;
     height: 240px;
     transition: 0.3s;
-    cursor: pointer;
+    
 }
 
 .container:hover{
@@ -36,7 +36,9 @@
     border-radius: 10px;
     transition: 0.3s;
 }
-
+.live-link{
+    background: linear-gradient(267deg, #DA7C25 0.36%, #B923E1 102.06%);
+}
 .mywork-showmore{
     display: flex;
     align-items: center;
