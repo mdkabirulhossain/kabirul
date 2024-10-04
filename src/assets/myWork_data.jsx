@@ -24,8 +24,8 @@ const mywork_data = [
     },
     {
         w_no:3,
-        url: 'https://car-gurdian-client.vercel.app/',
-        github_url: 'https://github.com/mdkabirulhossain/carGurdian',
+        url: 'https://car-doctor-ldd7-frontend.vercel.app/',
+        github_url: 'https://github.com/mdkabirulhossain/carDoctor',
         w_name:"CarGurdian",
         w_img:project5_img
     },
