@@ -6,7 +6,7 @@ import { FaGithub, FaLinkedin, FaFacebook } from "react-icons/fa";
 
 const Hero = () => {
     const downloadFile = async () => {
-        const response = await fetch('/Md_Kabirul_CV.pdf');
+        const response = await fetch('/Md_Kabirul_CV_01.pdf');
         const blob = await response.blob();
         const url = window.URL.createObjectURL(blob);
     
