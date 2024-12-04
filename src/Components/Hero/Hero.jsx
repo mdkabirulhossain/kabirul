@@ -13,7 +13,7 @@ const Hero = () => {
         // Create a link and programmatically click to start download
         const link = document.createElement('a');
         link.href = url;
-        link.setAttribute('download', 'Md_Kabirul_CV.pdf');
+        link.setAttribute('download', 'Md_Kabirul_CV_01.pdf');
         document.body.appendChild(link);
         link.click();
     
