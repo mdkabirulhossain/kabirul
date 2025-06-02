@@ -107,7 +107,7 @@
 
 @media(max-width:768px){
     .about{
-        gap: 40px;
+        gap: 10px;
         margin: 20px 20px;
         align-items: start;
     }
@@ -137,9 +137,11 @@
     }
     .about-achievements{
         justify-content: space-between;
+        margin-bottom: 20px;
     }
     .about-achievement{
         gap: 10px;
+        
     }
     .about-achievement h1{
         font-size: 34px;
