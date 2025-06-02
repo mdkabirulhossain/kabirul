@@ -24,9 +24,9 @@ const MyWork = () => {
                         <a href={project.url}>
                         <button className='live-link w-full py-2 mb-2 rounded-md'>Live link</button>
                         </a>
-                        <a href={project.github_url}>
+                        {/* <a href={project.github_url}>
                         <button className='live-link w-full py-2 mb-2 rounded-md '>Github link</button> 
-                        </a>
+                        </a> */}
                     </div>)
                 }
             </div>

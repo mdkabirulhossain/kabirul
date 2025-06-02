@@ -1,50 +1,53 @@
-.hero{
+.hero {
     display: flex;
     align-items: end;
     justify-content: space-around;
     flex-direction: row-reverse;
     gap: 2px;
 }
-.left{
+
+.left {
     margin-top: 120px;
 }
-.icon{
-    
+
+.icon {
+
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 20px;
     justify-content: center;
 }
-.icon a{
+
+.icon a {
     margin: 10px;
 }
 
 
 
-.hero h1{
+.hero h1 {
     text-align: center;
-    width: 70%;
+    width: 100%;
     font-size: 40px;
     font-weight: 400;
     margin-bottom: 15px;
 }
 
-.hero h1 span{
+.hero h1 span {
     background: linear-gradient(267deg, #DA7C25 0.36%, #B923E1 102.06%);
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 
-.hero p{
+.hero p {
     width: 50%;
     text-align: center;
     font-size: 24px;
     line-height: 24px;
 }
 
-.hero-action{
+.hero-action {
     display: flex;
     align-items: center;
     gap: 25px;
@@ -53,16 +56,16 @@
     margin-bottom: 50px;
 }
 
-.hero-connect{
+.hero-connect {
     padding: 25px 45px;
     border-radius: 50px;
     background: linear-gradient(264deg, #DF8908 -5.09%, #B415FF 106.28%);
     cursor: pointer;
     transition: 0.5s;
-    
+
 }
 
-.hero-resume{
+.hero-resume {
     padding: 25px 75px;
     border-radius: 50px;
     border: 2px solid #FFF;
@@ -70,37 +73,46 @@
     transition: 0.5s;
 }
 
-.hero-connect:hover{
+.hero-connect:hover {
     transform: scale(1.05);
 }
-.hero-resume:hover{
+
+.hero-resume:hover {
     border-color: #B415FF;
 }
 
-@media(max-width:768px){
-    .hero{
+
+@media(max-width:768px) {
+    .left {
+        margin-top: 50px;
+    }
+
+    .hero {
         flex-direction: column;
         justify-content: center;
         align-items: center;
     }
+
     /* .hero img{
         margin-top: 100px;
         width: 260px;
     } */
-    .hero h1{
+    .hero h1 {
         text-align: center;
         margin-top: 2px;
-        width: 90%;
+
         font-size: 30px;
     }
-    .hero p{
+
+    .hero p {
         width: 60%;
         font-size: 16px;
         line-height: 32px;
         margin: 10px 0px;
 
     }
-    .hero-action{
+
+    .hero-action {
         gap: 16px;
         font-size: 16px;
         font-weight: 400;
@@ -108,37 +120,43 @@
         align-items: center;
         justify-content: center;
     }
-    .hero-connect{
+
+    .hero-connect {
         padding: 20px 20px;
         border-radius: 40px;
     }
-    .hero-resume{
+
+    .hero-resume {
         padding: 20px 30px;
         border-radius: 40px;
         /* font-size: smaller; */
     }
 
 }
-@media(min-width:769px) and (max-width:991px){
-    .hero{
+
+@media(min-width:769px) and (max-width:991px) {
+    .hero {
         align-items: center;
         flex-direction: column;
         gap: 2px;
     }
-    .hero h1{
+
+    .hero h1 {
         text-align: center;
         margin-top: 2px;
         width: 90%;
         font-size: 30px;
     }
-    .hero p{
+
+    .hero p {
         width: 60%;
         font-size: 16px;
         line-height: 32px;
         margin: 10px 0px;
 
     }
-    .hero-action{
+
+    .hero-action {
         gap: 16px;
         font-size: 16px;
         font-weight: 400;
@@ -146,14 +164,15 @@
         align-items: center;
         justify-content: center;
     }
-    .hero-connect{
+
+    .hero-connect {
         padding: 20px 20px;
         border-radius: 40px;
     }
-    .hero-resume{
+
+    .hero-resume {
         padding: 20px 30px;
         border-radius: 40px;
         /* font-size: smaller; */
     }
 }
-
