@@ -108,7 +108,7 @@
 @media(max-width:768px){
     .about{
         gap: 40px;
-        margin: 50px 70px;
+        margin: 20px 20px;
         align-items: start;
     }
     .about-title h1{
