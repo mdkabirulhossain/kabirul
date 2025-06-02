@@ -1,47 +1,48 @@
-import project1_img from '../assets/project_1.svg'
-import food from '../assets/My_work_img/Header.jpg'
-import project4_img from '../assets/project_4.png'
-import project5_img from '../assets/1.jpg'
+import Southern from '../assets/southern-winds-lanscaping.webp'
+import OneTwoSix from '../assets/onetwosix.webp'
+import Sheehan from '../assets/sheehan.webp'
+import Renownded from '../assets/renownedfinishing.webp'
 import project6_img from '../assets/project_6.png'
-import AsiaMart_img from '../assets/My_work_img/Best_Sell.jpg'
+import BrainyBox from '../assets/brainyboxbd.webp'
 
 
 
 const mywork_data = [
     {
         w_no:1,
-        url: 'https://foodi-lyart.vercel.app/',
-        github_url: 'https://github.com/mdkabirulhossain/Foodi',
-        w_name:"FooDi",
-        w_img:food
+        url: 'https://onetwosixdesign.com/',
+        github_url: '#',
+        w_name:"OneTwoSix",
+        w_img:OneTwoSix
     },
     {
         w_no:2,
-        url: 'https://asia-mart.vercel.app/',
-        github_url: 'https://github.com/mdkabirulhossain/AsiaMart',
-        w_name:"AsiaMart",
-        w_img:AsiaMart_img
+        url: 'https://brainyboxbd.com/',
+        github_url: '#',
+        w_name:"BrainyBox",
+        w_img:BrainyBox
     },
     {
         w_no:3,
-        url: 'https://car-doctor-ldd7-frontend.vercel.app/',
-        github_url: 'https://github.com/mdkabirulhossain/carDoctor',
-        w_name:"CarGurdian",
-        w_img:project5_img
+        url: 'https://renownedfinishing.ca/',
+        github_url: '#',
+        w_name:"Renownded Finishing",
+        w_img:Renownded
     },
+
     {
         w_no:4,
-        url: 'https://bike-zone-update.vercel.app/',
-        github_url: 'https://github.com/mdkabirulhossain/Bike_Zone_Update',
-        w_name:"BikerZone",
-        w_img:project4_img
+        url: 'https://sheehan.mindwebsolutions.com/',
+        github_url: '#',
+        w_name:"Sheehan Mindweb Solutions",
+        w_img:Sheehan
     },
     {
         w_no:5,
-        url: 'https://github.com/mdkabirulhossain/Mediconnect',
-        github_url: 'https://github.com/mdkabirulhossain/Mediconnect',
-        w_name:"Mediconnect",
-        w_img:project1_img
+        url: 'https://southernwindshi.com/',
+        github_url: '#',
+        w_name:"Southern Winds Lanscaping",
+        w_img:Southern
         
     },
     {
